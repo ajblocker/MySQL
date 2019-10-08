@@ -1,3 +1,9 @@
+/*Copy the Database from your Very Easy Challenge
+-Write a query to add in three cars at once
+-Write a query to add in prices and colors for each of these cars
+-Write a query to put the Make and Model together in one column
+-Create a new query that adds an additional column to the results to show how many cars have the same Make.*/
+
 /* deletes database if it already exists*/
 DROP DATABASE IF EXISTS cars;
 CREATE DATABASE cars;
