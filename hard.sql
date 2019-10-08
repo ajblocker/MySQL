@@ -1,3 +1,10 @@
+/*Make a copy of your Medium Challenge
+-Write out the queries that would add the director’s First Name and Last Name into two separate columns. 
+-Create a query that puts the names together.
+-Create a query to put the list in alphabetical order by last name from A-Z
+-After you order the list, remove the Movies where the Last Name ends with ”R-Z”
+-Write a query where the first three appear*/
+
 /* deletes database if it already exists*/
 DROP DATABASE IF EXISTS movies;
 CREATE DATABASE movies;
@@ -115,6 +122,12 @@ ORDER BY `directors_last_name` ASC;
 SELECT * 
 FROM movies 
 WHERE `directors_last_name` >= 'R%';
+
+/*only first 3 directors last name appear*/
+SELECT `directors_last_name`
+FROM movies
+ORDER BY `directors_last_name`
+LIMIT 3;
 
 
 
